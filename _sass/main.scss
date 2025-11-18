@@ -145,16 +145,226 @@ body {
 //    background-position: center;
 //}
 
+.main {
+    display: flex;
+}
+
+.main-left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.main-center {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+.main-right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px 30px 10px;
+}
+
+
 .footer {
     width: 100%;
     height: 80px;
-    border-width: 2px; 
-    color: green;
+    //color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-width: 1px 0px 0px 0px;
 }
+
+.footer-left {
+    height: 100%;
+    flex: 1;
+    max-width: 300px;
+    display: flex;
+    justify-content: start; 
+    align-items: center;
+    //background-color: blue; 
+    padding: 0px 0px 0px 10px;
+}
+
+.footer-center {
+    height: 100%;
+    flex: 1;
+    //max-width: 50%;
+    max-width: 600px;
+    //lmax-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    //background-color: green; 
+    padding: 0px 10px 0px 10px;
+}
+
+.footer-right {
+    height: 100%;
+    flex: 1;
+    max-width: 300px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    //background-color: red; 
+    padding: 0px 10px 0px 0px;
+}
+
+.footer-item {
+    height: 100%;
+    display: flex;
+    //background-color: orange; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0px 10px;
+}
+
 
 .test-block {
     width: 50px;
     height: 20px;
     border-width: 2px; 
 }
+
+/* Base icon styles */
+.icon {
+  display: flex;
+  background-color: transparent; 
+  fill: none;
+  stroke: currentColor;  /* Inherits parent text color */
+}
+
+/* Chevron down icon specific */
+.icon-chevron-down {
+  margin-left: 0.3rem;
+  transition: transform 0.3s ease;
+}
+
+.grid {
+    display: grid;
+    gap: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+.grid-row-span-2 {
+    grid-row: span 2;
+}
+
+.grid-body {
+    display: grid;
+    grid-template-rows: 
+        auto
+        1fr
+        auto; 
+    //grid-template-columns: 1fr; 
+    //min-height: 100vh;
+    //min-height: 100dvh;
+}
+
+.grid-main {
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 2fr 1fr; 
+    grid-template-areas:
+        "left center right";
+    //gap: clamp(10px, , 100%);
+    background-color: blue;
+}
+
+.grid-header {
+    width: 100%;
+    height: 80px;
+    //grid-template-columns: 1fr 1fr;
+    //grid-template-columns: repeat(3, 1fr);
+    //grid-template-columns: minmax(auto, 300px) minmax(auto, 600px) minmax(auto, 300px); 
+    //grid-template-columns: minmax(1fr, 300px) minmax(2fr, 600px) minmax(1fr, 300px); 
+    grid-template-columns: 1fr 2fr 1fr; 
+    //grid-template-columns: minmax(1fr, 100px) minmax(10px, 1fr) minmax(2fr, 200px) minmax(10px, 1fr) minmax(1fr, 100px); 
+    grid-template-areas:
+        "left center right";
+    //gap: clamp(10px, , 100%);
+    background-color: blue;
+}
+
+.grid-header-left {
+    grid-area: left;
+    grid-template-columns: minmax(auto, 200px);
+    justify-content: left;
+    background-color: orange;
+}
+
+.grid-header-center {
+    grid-area: center;
+    grid-template-columns: minmax(auto, 400px);
+    justify-content: center;
+    background-color: red;
+    //grid-template-columns: 200px;
+}
+
+.grid-header-right {
+    grid-area: right;
+    grid-template-columns: minmax(auto, 200px);
+    justify-content: right;
+    background-color: yellow;
+}
+
+.grid-header-item {
+    background-color: pink;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    //grid-template-columns: repeat(auto-fit, auto);
+    //grid-template-columns: auto auto;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.button {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    gap: 2px;
+    align-items: center;
+    width: auto;
+    height: 70px;
+    padding: 10px;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: blue;
+    background-color: grey;
+}
+
+.button:hover {
+    color: inherit;
+    background-color: $light-grey; 
+}
+
+
+//.grid-header:nth-child(1) {
+//    grid-area: one;
+//}
+
+//.grid-header:nth-child(2) {
+//    grid-area: two;
+//}
+//
+//.grid-header:nth-child(1) {
+//    grid-area: two;
+//}
 
