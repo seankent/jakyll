@@ -6,6 +6,7 @@
 
 .main-content {
     //line-height: 1.6;
+    padding: 0px 0px 20px 0px;
 }
 
 .main-content h1,
@@ -17,7 +18,11 @@
 
 .main-content pre {
     padding: 10px;
+    border: 1px solid grey;
+    border-radius: 8px; 
 }
+
+
 
 //.main-content thead {
 //    display: grid;

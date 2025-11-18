@@ -1,26 +1,41 @@
 <div class="grid-header">
     <div class="grid-header-left">
-        <div class="grid grid-header-item">
-            <button class="button">
-                Logo 
+        <div class="grid grid-header-item-left">
+            <button class="button button-logo">
+                <img src="../../docs/bluejay_devices.svg" alt="{{ site.title }}" class="nav-logo-img">
             </button>
         </div>
     </div>
     <div class="grid-header-center">
-        <div class="grid grid-header-item">
+        <div class="grid grid-header-item-center">
             <button class="button">
-                About {% include icons/chevron-down.html size="10" %}
+                About
             </button>
+            <!--
             <button class="button">
-                Productsxxxx 
+                Products
             </button>
-            <button class="button">
-                Documentation 
-            </button>
+            -->
+            <div class="dropdown custom-select">
+                <a href="#" class="nav-link">Nav</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Item #1</a></li>
+                </ul>
+            </div>
+            <div class="custom-select">
+                <select>
+                    <option value="">Documentation</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+                <div class="custom-arrow">{% include icons/chevron-down.html size="12" %}</div>
+            </div>
         </div>
     </div>
     <div class="grid-header-right">
-        <div class="grid grid-header-item">
+        <div class="grid grid-header-item-right">
             <button class="button">
                 Contact 
             </button>
