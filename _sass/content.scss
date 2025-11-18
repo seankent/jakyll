@@ -7,3 +7,108 @@
 .main-content {
     //line-height: 1.6;
 }
+
+.main-content h1,
+.main-content p,
+.main-content table,
+.main-content pre {
+    margin: 20px 0px 0px 0px;
+}
+
+.main-content pre {
+    padding: 10px;
+}
+
+//.main-content thead {
+//    display: grid;
+//    grid-template-columns: repeat(auto-fit, 1fr);
+//    gap: 10px; 
+//}
+
+//.main-content .table {
+//  overflow-x: auto;
+//  margin: 1rem 0;
+
+.main-content table {
+  width: 100%;
+  border: 1px solid grey;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.main-content th,
+.main-content td {
+  padding: 0.75rem;
+  text-align: left;
+  border-right: 1px solid grey; /* Vertical dividers */
+  border-bottom: 1px solid grey; /* Horizontal dividers */
+}
+
+/* Remove right border from last column */
+.main-content th:last-child,
+.main-content td:last-child {
+  border-right: none;
+}
+
+/* Remove bottom border from last row */
+.main-content tr:last-child td {
+  border-bottom: none;
+}
+
+.main-content th {
+  background: #f0f0f0;
+  font-weight: bold;
+}
+
+//.main-content tr:last-child {
+//    border-width: 0px;
+//}
+//.main-content table {
+//    display: grid;
+//    grid-template-columns: 1fr; 
+//    //grid-template-columns: repeat(auto-fit, 1fr);
+//    //grid-template-columns: 1fr 1fr 1fr; 
+//    //grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+//    gap: 10px; 
+//    border-color: grey;
+//    border-width: 1px;
+//}
+//
+//.main-content thead,
+//.main-content tbody {
+//    display: grid;
+//    grid-template-columns: 1fr; 
+//    //grid-template-columns: repeat(auto-fit, 1fr);
+//}
+//
+//.main-content tr {
+//    display: grid;
+//    //grid-template-columns: 1fr; 
+//    grid-template-columns: repeat(auto-fit, 1fr);
+//}
+//
+///* Header styling */
+//.main-content th {
+//  background: #f0f0f0;
+//  font-weight: bold;
+//  padding: 0.75rem;
+//  text-align: left;
+//}
+//
+///* Cell styling */
+//.main-content td {
+//  padding: 0.75rem;
+//  text-align: left;
+//}
+
+//
+//.main-content th {
+//  background: #333;
+//  color: white;
+//  padding: 1rem;
+//}
+
+
+

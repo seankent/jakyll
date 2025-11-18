@@ -16,7 +16,7 @@ $default-border-color: $dark-grey;
     border-style: solid; 
     border-width: 0; 
     border-color: $default-border-color; 
-    background-color: $default-background-color;
+    background-color: transparent;
     //list-style: none;
     //text-decoration: none;
 }
@@ -218,7 +218,8 @@ body {
     grid-template-areas:
         "left center right";
     //background-color: blue;
-    gap: 0;
+    //gap: 0;
+    gap: 20px;
 }
 
 .grid-header {
@@ -271,7 +272,7 @@ body {
     justify-content: center;
     //background-color: red;
     //grid-template-columns: 200px;
-    gap: 0;
+    //gap: 0;
 }
 
 .grid-header-center {

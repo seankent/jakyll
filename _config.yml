@@ -1,33 +1,15 @@
 
-# Site settings
-title: Your Site Title
-description: A description of your site
-url: ""  # Your site's URL
-baseurl: ""  # Subpath, e.g. /blog (leave empty if site is at root)
+title: Minimal theme
+#logo: /assets/img/logo.png
+description: Minimal is a theme for GitHub Pages.
+show_downloads: true
+google_analytics:
+theme: jakyll
 
-# Build settings
-markdown: kramdown
+
 highlighter: rouge
-
+gist:
+  noscript: false
 kramdown:
+  math_engine: mathjax
   syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    block:
-      line_numbers: false
-
-# Plugins
-#plugins:
-#  - jekyll-feed
-#  - jekyll-seo-tag
-
-# Exclude from processing
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-
-# Collections (if needed)
-# collections:
-#   docs:
-#     output: true
